@@ -418,15 +418,12 @@
       <a name="facing" val="east"/>
       <a name="label" val="STAGE_1"/>
     </comp>
-    <comp lib="0" loc="(2180,850)" name="Tunnel">
-      <a name="label" val="ADI"/>
-    </comp>
     <comp lib="0" loc="(260,970)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="RY_ENABLE"/>
     </comp>
     <comp lib="0" loc="(2230,840)" name="Tunnel">
-      <a name="label" val="ADD"/>
+      <a name="label" val="AND"/>
     </comp>
     <comp lib="0" loc="(550,1180)" name="Tunnel">
       <a name="label" val="SUI"/>
@@ -443,14 +440,8 @@
       <a name="select" val="4"/>
     </comp>
     <comp loc="(1320,1220)" name="ALU"/>
-    <comp lib="0" loc="(2230,920)" name="Tunnel">
-      <a name="label" val="MOV"/>
-    </comp>
     <comp lib="0" loc="(440,1330)" name="Tunnel">
       <a name="label" val="STAGE_3"/>
-    </comp>
-    <comp lib="0" loc="(2180,950)" name="Tunnel">
-      <a name="label" val="STORE"/>
     </comp>
     <comp lib="0" loc="(120,380)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -519,6 +510,9 @@
     <comp lib="0" loc="(240,1090)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="RA_ENABLE_SELECT"/>
+    </comp>
+    <comp lib="0" loc="(2230,880)" name="Tunnel">
+      <a name="label" val="OR"/>
     </comp>
     <comp lib="0" loc="(1320,570)" name="Tunnel">
       <a name="width" val="3"/>
@@ -597,9 +591,6 @@
     <comp lib="0" loc="(590,1000)" name="Tunnel">
       <a name="label" val="MUXY_ENABLE"/>
     </comp>
-    <comp lib="0" loc="(2180,870)" name="Tunnel">
-      <a name="label" val="SUI"/>
-    </comp>
     <comp lib="0" loc="(340,1670)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="16"/>
@@ -632,9 +623,6 @@
     </comp>
     <comp lib="0" loc="(590,1030)" name="Tunnel">
       <a name="label" val="ADI"/>
-    </comp>
-    <comp lib="0" loc="(2230,960)" name="Tunnel">
-      <a name="label" val="HLT"/>
     </comp>
     <comp lib="0" loc="(1580,1040)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -687,9 +675,6 @@
     <comp lib="0" loc="(570,940)" name="Tunnel">
       <a name="label" val="ORI"/>
     </comp>
-    <comp lib="0" loc="(2230,860)" name="Tunnel">
-      <a name="label" val="SUB"/>
-    </comp>
     <comp lib="4" loc="(1160,810)" name="Register">
       <a name="width" val="32"/>
       <a name="label" val="RA"/>
@@ -700,9 +685,6 @@
     <comp lib="0" loc="(340,1730)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MEM_WRITE"/>
-    </comp>
-    <comp lib="0" loc="(2230,880)" name="Tunnel">
-      <a name="label" val="AND"/>
     </comp>
     <comp lib="0" loc="(1340,990)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -746,12 +728,6 @@
     <comp lib="0" loc="(1340,1360)" name="Tunnel">
       <a name="label" val="RZ_CLEAR"/>
     </comp>
-    <comp lib="0" loc="(2230,940)" name="Tunnel">
-      <a name="label" val="LOAD"/>
-    </comp>
-    <comp lib="0" loc="(2180,930)" name="Tunnel">
-      <a name="label" val="MVI"/>
-    </comp>
     <comp lib="5" loc="(180,320)" name="LED">
       <a name="facing" val="south"/>
     </comp>
@@ -765,6 +741,9 @@
     <comp lib="6" loc="(2148,516)" name="Text">
       <a name="text" val="INSTRUCTION DECODER"/>
       <a name="font" val="SansSerif plain 24"/>
+    </comp>
+    <comp lib="0" loc="(2230,920)" name="Tunnel">
+      <a name="label" val="ADD"/>
     </comp>
     <comp lib="0" loc="(550,910)" name="Tunnel">
       <a name="label" val="ALU_ENABLE"/>
@@ -782,9 +761,6 @@
     <comp lib="0" loc="(120,420)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="STAGE_4"/>
-    </comp>
-    <comp lib="0" loc="(2230,900)" name="Tunnel">
-      <a name="label" val="OR"/>
     </comp>
     <comp lib="0" loc="(120,360)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -837,11 +813,8 @@
     <comp lib="0" loc="(1520,1560)" name="Tunnel">
       <a name="label" val="RY_CLEAR"/>
     </comp>
-    <comp lib="0" loc="(2180,890)" name="Tunnel">
-      <a name="label" val="ANI"/>
-    </comp>
-    <comp lib="0" loc="(2180,910)" name="Tunnel">
-      <a name="label" val="ORI"/>
+    <comp lib="0" loc="(2230,960)" name="Tunnel">
+      <a name="label" val="SUB"/>
     </comp>
     <comp lib="0" loc="(1320,530)" name="Tunnel">
       <a name="label" val="CLK"/>
