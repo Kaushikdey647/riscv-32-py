@@ -9,18 +9,18 @@ This repository is created by **Kaushik Dey (20CS01043, IIT Bhubaneswar)** as a 
 
 The instuction set needed to define for the processor are
 
-- **`MOVE RA, RB`**: Content of RB is transferred to RA
-- **`MOVE RA, Im`**: The Immediate value Im is stored in RA
-- **`LOAD RA, X(RB)`**: The content of the memory location [[RB]+X] is loaded into RA, where X is a 16bit unsigned immediate value
-- **`STORE RA, X(RB)`**: The content of register RA is stored in memory location [[RB]+X] where X is again, a 16bit unsigned immediate value
-- **`ADD RA, RB, RC`**: RA = RB + RC
-- **`ADI RA, RB, Im`**: RA = RB + Im, where Im is a 32-bit unsigned extended immediate value
-- **`SUB RA, RB, RC`**: RA = RB - RC
-- **`SUI RA, RB, Im`**: RA = RB - Im, where Im is a 32-bit unsigned extended immediate value
-- **`AND RA, RB, RC`**: RA = RB AND RC
-- **`ANI RA, RB, IM`**: RA = RB AND Im, where Im is a 32-bit unsigned extended immediate value
-- **`OR RA, RB, RC`**: RA = RB OR RC
-- **`ORI RA, RB, IM`**: RA = RB OR Im, where Im is a 32-bit unsigned extended immediate value
+- **`MOV RA RB`**: Content of RB is transferred to RA
+- **`MVI RA Im`**: The Immediate value Im is stored in RA
+- **`LOAD RA RB X`**: The content of the memory location [[RB]+X] is loaded into RA, where X is a 16bit unsigned immediate value
+- **`STORE RA RB X`**: The content of register RA is stored in memory location [[RB]+X] where X is again, a 16bit unsigned immediate value
+- **`ADD RA RB RC`**: RA = RB + RC
+- **`ADI RA RB Im`**: RA = RB + Im, where Im is a 32-bit unsigned extended immediate value
+- **`SUB RA RB RC`**: RA = RB - RC
+- **`SUI RA RB Im`**: RA = RB - Im, where Im is a 32-bit unsigned extended immediate value
+- **`AND RA RB RC`**: RA = RB AND RC
+- **`ANI RA RB IM`**: RA = RB AND Im, where Im is a 32-bit unsigned extended immediate value
+- **`OR RA RB RC`**: RA = RB OR RC
+- **`ORI RA RB IM`**: RA = RB OR Im, where Im is a 32-bit unsigned extended immediate value
 - **`HLT`**
 
 ## HOW TO USE
