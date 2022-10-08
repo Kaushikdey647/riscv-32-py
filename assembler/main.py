@@ -30,6 +30,7 @@ register_encoding = {
     "R8": 7
 }
 
+
 def bin_to_hex(bin_str):
     if( len(bin_str) != 32 ):
         return None
