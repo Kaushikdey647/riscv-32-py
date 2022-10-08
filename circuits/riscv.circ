@@ -73,7 +73,6 @@
     <wire from="(400,730)" to="(400,930)"/>
     <wire from="(2220,1220)" to="(2230,1220)"/>
     <wire from="(660,260)" to="(660,290)"/>
-    <wire from="(2100,1260)" to="(2110,1260)"/>
     <wire from="(500,850)" to="(500,930)"/>
     <wire from="(270,1000)" to="(310,1000)"/>
     <wire from="(480,1150)" to="(480,1240)"/>
@@ -152,7 +151,6 @@
     <wire from="(260,1000)" to="(260,1020)"/>
     <wire from="(320,850)" to="(320,930)"/>
     <wire from="(2100,1200)" to="(2110,1200)"/>
-    <wire from="(2090,1270)" to="(2100,1270)"/>
     <wire from="(2190,730)" to="(2200,730)"/>
     <wire from="(1350,850)" to="(1360,850)"/>
     <wire from="(1300,1360)" to="(1310,1360)"/>
@@ -189,7 +187,6 @@
     <wire from="(2090,640)" to="(2140,640)"/>
     <wire from="(1430,1330)" to="(1490,1330)"/>
     <wire from="(220,320)" to="(220,400)"/>
-    <wire from="(2200,1190)" to="(2210,1190)"/>
     <wire from="(2150,890)" to="(2220,890)"/>
     <wire from="(550,940)" to="(550,980)"/>
     <wire from="(1610,910)" to="(1610,1030)"/>
@@ -239,7 +236,6 @@
     <wire from="(300,850)" to="(320,850)"/>
     <wire from="(660,320)" to="(690,320)"/>
     <wire from="(2080,720)" to="(2090,720)"/>
-    <wire from="(2100,1260)" to="(2100,1270)"/>
     <wire from="(960,220)" to="(990,220)"/>
     <wire from="(960,300)" to="(990,300)"/>
     <wire from="(440,760)" to="(450,760)"/>
@@ -334,7 +330,6 @@
     <wire from="(1330,1210)" to="(1370,1210)"/>
     <wire from="(250,1080)" to="(250,1090)"/>
     <wire from="(660,290)" to="(660,320)"/>
-    <wire from="(2190,1220)" to="(2200,1220)"/>
     <wire from="(2150,850)" to="(2220,850)"/>
     <wire from="(2080,660)" to="(2140,660)"/>
     <wire from="(2150,930)" to="(2220,930)"/>
@@ -364,11 +359,6 @@
     <wire from="(260,320)" to="(260,440)"/>
     <wire from="(1290,550)" to="(1310,550)"/>
     <wire from="(2190,700)" to="(2190,730)"/>
-    <wire from="(2200,1190)" to="(2200,1220)"/>
-    <comp lib="0" loc="(2090,1270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MUXPC_SELECT"/>
-    </comp>
     <comp lib="0" loc="(1320,610)" name="Tunnel">
       <a name="width" val="3"/>
       <a name="label" val="RY_SELECT"/>
@@ -805,9 +795,6 @@
     <comp lib="6" loc="(411,655)" name="Text">
       <a name="text" val="CONTROL SIGNALS"/>
       <a name="font" val="SansSerif plain 24"/>
-    </comp>
-    <comp lib="0" loc="(2210,1190)" name="Tunnel">
-      <a name="label" val="PC__ENABLE"/>
     </comp>
     <comp lib="5" loc="(260,320)" name="LED">
       <a name="facing" val="south"/>
