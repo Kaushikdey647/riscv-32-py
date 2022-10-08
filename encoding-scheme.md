@@ -57,6 +57,7 @@ There are 8 registers available, those are:
 - **`R7`**: 110
 - **`R8`**: 111
 
+
 **NOTE**: The immediate values are 16-bit
 
 **NOTE**: 0-1 of OPCODE is ALU_SELECT
