@@ -1,6 +1,6 @@
 # Circuit and Function Description
 
-![Main Circuit Image](../images/main.png)
+![Main Circuit Image](/images/main.png)
 
 
 In this document, we shall have an in depth look into the circuit of the processor and its components. Furthermore, we shall have a look 
