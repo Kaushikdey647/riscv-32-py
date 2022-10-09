@@ -119,14 +119,15 @@ if __name__ == '__main__':
     input = open(input_filename)
     output = open(output_filename, mode = 'w')
 
-    output.write('v2.0 raw')
+    output.write('v2.0 raw\n')
+
 
     for i,line in enumerate(input):
-        if i%8 == 0: output.write('\n')
         if len(line.strip()) > 0:
-            if line.strip()[0] == '#': continue
+            if line.strip()[0] in ['#','\n']: continue
             hexcode = convert_line(line, i)
-            output.write(hexcode+' ')
+            if hexcode is not None:
+                output.write(hexcode+' ')
     
     input.close()
     output.close()
