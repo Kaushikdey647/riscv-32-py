@@ -5,10 +5,10 @@
 The proposed encoding scheme for the circuit would be:
 
 - **31-28**: `OPCODE`
-- **27-25**: `RY`
-- **24-22**: `RA`
-- **21-19**: `RB`
-- **21-06**: `Immediate`
+- **27-24**: `RY`
+- **23-20**: `RA`
+- **19-16**: `RB`
+- **15-00**: `Immediate`
 
 ## INSTRUCTION SET
 
