@@ -1,9 +1,23 @@
 # riscv-32-c
 A RISC Processor with a 5 stage pipeline and 32-bit instruction set.
 
+## CONTENTS
+
+- [Circuit Manual](/docs/circuit.md)
+- [Encoding Scheme](/docs/encoding-scheme.md)
+- [Assembler Manual](/docs/assembler.md)
+
 ## DESCRIPTION
 
 This repository is created by **Kaushik Dey (20CS01043, IIT Bhubaneswar)** as a submission for the **Assignment 4** (Mini Project) of **Computer Organization and Architecture Lab** Course in Autumn of 2022
+
+## HOW TO USE
+
+
+
+### **NOTE**: USE ASSEMBLER TO CHECK AND ENCODE THE INSTRUCTIONS
+
+The assembler can be found at assembler/main.py
 
 ## INSTRUCTION SET
 
@@ -23,7 +37,6 @@ The instuction set needed to define for the processor are
 - **`ORI RA RB IM`**: RA = RB OR Im, where Im is a 32-bit unsigned extended immediate value
 - **`HLT`**
 
-## HOW TO USE
 
 ## DELIVERABLES (for the Assignment)
 
