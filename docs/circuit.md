@@ -1,6 +1,6 @@
 # Circuit and Function Description
 
-![Main Circuit Image](/images/main.png)
+![Main Circuit Image](/docs/images/main.png)
 
 
 In this document, we shall have an in depth look into the circuit of the processor and its components. Furthermore, we shall have a look 
@@ -18,7 +18,7 @@ The **key** components of this processor are
 
 ### Arithmetic and Logic Unit (ALU)
 
-![ALU](../images/alu.png)
+![ALU](/docs/images/alu.png)
 
 The ALU, for now, has no flags, and supports only four operations:
 
