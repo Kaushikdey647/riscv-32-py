@@ -103,7 +103,7 @@ def convert_line(line,index):
     return merge_hex(opcode,ry,ra,rb,im)
 
 def merge_hex(opcode,ry,ra,rb,im):
-    return hex(opcode%0xf)[2:] + hex(ry%0xf)[2:] + hex(ra%0xf)[2:] + hex(rb%0xf)[2:] + '{0:0{1}X}'.format(im%0x10000,4)
+    return hex(opcode%0x10)[2:] + hex(ry%0x10)[2:] + hex(ra%0x10)[2:] + hex(rb%0x10)[2:] + '{0:0{1}X}'.format(im%0x10000,4)
 
 if __name__ == '__main__':
     try:
