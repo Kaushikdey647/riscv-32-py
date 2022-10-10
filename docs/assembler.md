@@ -1,8 +1,19 @@
 # Assembler
 
-The assembler for this circuit is a rather basic one, written in python.
+Found in `assembler/main.py`, the assembler for this circuit is a rather basic one, written in python.
 
 Following are the instructions available in the assembler, with description on how to use them and examples
+
+## **HOW TO USE**
+
+- Check the examples given in `/examples` directory
+- Make sure you are in the `riscv-32-py` directory
+- Run `python assembler/main.py <path_to_assembly_code> <desired_path_to_memory_image>`
+- Open `circuit/riscv.circ` in logisim
+- Right click on the Memory in Memory Interface in `MAIN` circuit
+- Import this memory image you just created
+- Press the reset settings button (***NOT the reset memory button***)
+- To execute the commands, run the clock and see the commands executing sequentially
 
 ### **NOTE**: USE ASSEMBLER TO CHECK AND ENCODE THE INSTRUCTIONS
 
@@ -71,3 +82,33 @@ Following are the instructions available in the assembler, with description on h
 - **DESCRIPTION**: The content of register RA is stored in memory location [[RB]+X] where X is again, a 16bit unsigned immediate value
 - **OPCODE**: `1011`
 - **FORMAT**: `STORE R1 R2 2` stores R1 into [ [R2] + 2 ]
+
+## **COMMENTS**
+
+- `#` is used to denote a comment.
+- Every comment is ignored during transpilation
+- Every empty line is ignored during a transpilation
+
+## **EXAMPLE**
+
+### The following is a code written in assembly
+
+```asm
+# CODE 1
+# SIMPLE PROGRAM TO ADD TWO NUMBERS at 16 and 17 and storing it at 18
+
+MVI R1 16 #BASE ADDRESS
+LOAD R2 R1 0 #LOAD DATA AT 16
+LOAD R3 R1 1 #LOAD DATA AT 17
+ADD R4 R2 R3 #ADD IN R4
+STORE R4 R1 2 #STORE AT 18
+HLT
+```
+
+### The Assembler translates it to
+
+```asm
+v2.0 raw
+90000010 a1000000 a2000001 03120000 b3000002 f0000000
+```
+**NOTE**: Each group is a 32-bit instruction

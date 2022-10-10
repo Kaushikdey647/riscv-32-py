@@ -10,6 +10,8 @@ The proposed encoding scheme for the circuit would be:
 - **19-16**: `RB`
 - **15-00**: `Immediate`
 
+![DECODER](/docs/images/decoder.png)
+
 ## INSTRUCTION SET
 
 The instuction set needed to define for the processor are
@@ -26,7 +28,7 @@ The instuction set needed to define for the processor are
 - **`ANI RA RB IM`**: RA = RB AND Im, where Im is a 32-bit unsigned extended immediate value
 - **`OR RA RB RC`**: RA = RB OR RC
 - **`ORI RA RB IM`**: RA = RB OR Im, where Im is a 32-bit unsigned extended immediate value
-- **`HLT`**
+- **`HLT`**: Stops the Execution at current address
 
 ## INSTRUCTION ENCODING
 
@@ -38,7 +40,7 @@ The OPCODES FOR THE OPERATIONS ARE WITH ALU MAPPING :
 - **`AND`**: 0100 (4) (AND)
 - **`ANI`**: 0101 (5) (AND)
 - **`OR`**: 0110 (6) (OR)
-- **`ORI`**: 0111 (7) (ORI)
+- **`ORI`**: 0111 (7) (OR)
 - **`MOV`**: 1000 (8) (RA)
 - **`MVI`**: 1001 (9) (RB)
 - **`LOAD`**: 1010 (10) (SUM)
@@ -60,7 +62,7 @@ There are 8 registers available, those are:
 
 **NOTE**: The immediate values are 16-bit
 
-**NOTE**: 0-1 of OPCODE is ALU_SELECT
+**NOTE**: The entirety of OPCODE is ALU_SELECT
 
 ## LITERAL ENCODING
 
@@ -76,12 +78,11 @@ For example the instruction
 
 would translate to:
 
- ` 0010 001 000 0000000000111000 000000 `
+ ` 0010 0001 0000 0000 0000000000111000 `
  
- Note that the last 6 bits are not used, nevenrtheless, grouping into 4, we have:
  
- ` 0010 0010 0000 0000 0000 1110 0000 0000 `
+ ` 0010 0001 0000 0000 0000 0000 0011 1000 `
  
  And converting into hex, we have
  
- ### `22000E00`
+ ### `21000038`

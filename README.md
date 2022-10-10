@@ -6,18 +6,31 @@ A RISC Processor with a 5 stage pipeline and 32-bit instruction set.
 - [Circuit Manual](/docs/circuit.md)
 - [Encoding Scheme](/docs/encoding-scheme.md)
 - [Assembler Manual](/docs/assembler.md)
+- [Five Stage Architecture Explained](/docs/datapath.md)
+- [Control Signals and Control System](/docs/control-signals.md)
 
 ## DESCRIPTION
 
 This repository is created by **Kaushik Dey (20CS01043, IIT Bhubaneswar)** as a submission for the **Assignment 4** (Mini Project) of **Computer Organization and Architecture Lab** Course in Autumn of 2022
 
+## PREREQUISITES
+
+- python (version 3.6 or above)
+- logisim (original, avoid logisim evolution)
+
 ## HOW TO USE
 
-
+- Open up the circuit in [`/circuits/riscv.circ`](/circuits/riscv.circ) in logisim
+- Refer to Assembler Manual and write your assembly code.
+- Assemble your code using the script at [`/assembler/main.py`](/assembler/main.py)
+- Go to `MAIN` section in circuit and right click on the memory and load the code into the circuit.
+- Run the code by executing the clock (`Ctrl+T` repeatedly)
 
 ### **NOTE**: USE ASSEMBLER TO CHECK AND ENCODE THE INSTRUCTIONS
 
 The assembler can be found at assembler/main.py
+
+
 
 ## INSTRUCTION SET
 
@@ -41,11 +54,11 @@ The instuction set needed to define for the processor are
 ## DELIVERABLES (for the Assignment)
 
 - A readme file (this).
-- The Logisim circuit files.
-- Block level diagram of the implementation.
-- 5 stage architecture overview
-- Assembler Table
-- Encoding Scheme
+- The Logisim circuit files. *(go to the [circuits folder](/circuits) )*
+- Block level diagram of the implementation. *(go to the [circuit manual](/docs/circuit.md) )*
+- 5 stage architecture overview *(go to the [Pipeline Overview](/docs/datapath.md))*
+- Assembler Manual *(go to the [Assembler Manual](/docs/assembler.md))*
+- Encoding Scheme *(go to the [Encoding Scheme](/docs/encoding-scheme.md))*
 
 ## INSTRUCTIONS PROVIDED
 
