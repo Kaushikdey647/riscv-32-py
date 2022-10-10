@@ -42,7 +42,7 @@ Here we defined some templates to group some signals together for ease of circui
 
 - If the instruction is `TYPE_3` (ADD,SUB,AND,OR,STORE) RB is used to store, either the second operand, or the value to store, as in case of `STORE` instruction. Hence the CU, enables the register RB, by signalling `RB_ENABLE` and `RB_ENABLE_SELECT`, so that the value can be written to it.
 
-- For any other instruction (including `TYPE_3` and `TYPE_2`) it also activates `RA_ENABLE` and `RA_ENABLE_SELECT` enabling RA for use.
+- For any other instruction (including `TYPE_3` and `TYPE_2` and `MOV`) it also activates `RA_ENABLE` and `RA_ENABLE_SELECT` enabling RA for use.
 
 ## STAGE 3
 
