@@ -7,7 +7,7 @@ A RISC Processor with a 5 stage pipeline and 32-bit instruction set.
 - [Encoding Scheme](/docs/encoding-scheme.md)
 - [Assembler Manual](/docs/assembler.md)
 - [Five Stage Architecture Explained](/docs/datapath.md)
-- [Control Signals and Control System](/docs/control-signals.md)
+- [Control Signals and Control Unit](/docs/control-signals.md)
 
 ## DESCRIPTION
 
